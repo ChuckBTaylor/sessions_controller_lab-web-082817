@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+
+    <% if session[:name] == nil %>
+      <%= link_to 'Log in', login_path %>
+      <% byebug %>
+    <% else %>
+      <h1><%= "hi, #{session[:username]}" %></h1>
+    <% end %>
